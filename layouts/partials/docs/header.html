@@ -5,7 +5,9 @@
 
   <strong>{{ partial "docs/title" . }}</strong>
 
+  {{ if default true (default .Site.Params.BookToC .Params.BookToC) }}
   <label for="toc-control">
     <img src="{{ "svg/toc.svg" | relURL }}" class="book-icon" alt="Table of Contents" />
   </label>
+  {{ end }}
 </div>

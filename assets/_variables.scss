@@ -11,6 +11,8 @@ $body-background: $lightblue;
 $body-font-color: $darkblue;
 $body-font-weight: normal !default;
 
+$body-min-width: 0;
+
 $color-link: #ff002e;
 $color-visited-link: lighten($color-link, 8%);
 

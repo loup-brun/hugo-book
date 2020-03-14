@@ -1,3 +1,15 @@
 /* You can override SASS variables here. */
 
 // @import "plugins/dark";
+
+$darkblue: #0e2d63;
+$lightblue: #bcd4e5;
+
+$font-size-base: 17px;
+
+$body-background: $lightblue;
+$body-font-color: $darkblue;
+$body-font-weight: normal !default;
+
+$color-link: #ff002e;
+$color-visited-link: lighten($color-link, 8%);

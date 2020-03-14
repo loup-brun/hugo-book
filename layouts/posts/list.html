@@ -1,4 +1,9 @@
 {{ define "main" }}
+<h1>{{ .Title }}</h1>
+
+{{ .Content }}
+
+
   {{ $paginator := .Paginate (where .Pages "Params.hidden" "ne" true) }}
   {{ range sort .Paginator.Pages }}
   <article class="markdown book-post">

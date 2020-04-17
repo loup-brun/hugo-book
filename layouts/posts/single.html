@@ -1,11 +1,14 @@
-{{ define "main" }}
+{{- define "main" }}
 <article class="markdown">
-  {{ partial "docs/post-meta" . }}
+
+  <h1>{{ .Title | markdownify }}</h1>
+
+  {{- partial "docs/post-meta" . -}}
 
   {{- .Content -}}
 </article>
-{{ end }}
+{{ end -}}
 
-{{ define "toc" }}
+{{- define "toc" }}
   {{ partial "docs/toc" . }}
-{{ end }}
+{{ end -}}

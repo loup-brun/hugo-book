@@ -18,7 +18,6 @@
         {{ template "header" . }} <!-- Mobile layout header -->
       </header>
 
-      <h1>{{ .Title }}</h1>
       {{ partial "docs/inject/content-before" . }}
       {{ template "main" . }} <!-- Page Content -->
       {{ partial "docs/inject/content-after" . }}
